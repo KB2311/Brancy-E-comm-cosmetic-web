@@ -4,8 +4,8 @@ function Banner() {
   return (
     <div className="min-h-screen">
       <div className="hero flex items-center justify-center h-full md:pt-14">
-        <div className="px-2 grid w-full h-full grid-cols-1 md:grid-cols-2 items-center justify-center">
-          <div className="w-full h-full flex flex-col items-center justify-center text-center pt-24">
+        <div className="px-3 grid w-full h-full grid-cols-1 md:grid-cols-2 items-center justify-center">
+          <div className="w-full h-full flex flex-col items-center justify-center text-center pt-32">
             <div className="">
               <img
                 className="object-contain"

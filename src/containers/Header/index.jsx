@@ -6,7 +6,7 @@ import { IoMenu } from 'react-icons/io5';
 
 function Header() {
   return (
-    <div className="fixed pt-3 md:pt-0 flex justify-between px-2 w-full">
+    <div className="fixed pt-3 md:pt-0 flex justify-between px-3 w-full">
       <div className="h-16 flex items-center ">
         <div className="md:w-40 cursor-pointer">
           <img
