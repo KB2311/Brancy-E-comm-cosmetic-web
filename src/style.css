@@ -21,3 +21,13 @@
     @apply flex flex-col gap-4 items-center justify-center max-w-48 aspect-4/3 md:aspect-3/4 rounded-2xl relative my-6;
   }
 } */
+.hero::before {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  content: '';
+  background-color: #d9f1e1;
+  z-index: -1;
+}
