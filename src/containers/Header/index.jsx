@@ -6,33 +6,33 @@ import { IoMenu } from 'react-icons/io5';
 
 function Header() {
   return (
-    <div className="fixed pt-3 md:pt-0 flex justify-between px-3 w-full">
-      <div className="h-16 flex items-center ">
-        <div className="md:w-40 cursor-pointer">
+    <div className="fixed flex w-full justify-between px-3 pt-3 md:pt-0">
+      <div className="flex h-16 items-center ">
+        <div className="cursor-pointer md:w-40">
           <img
             className="h-12 object-fill"
             src="https://template.hasthemes.com/brancy/brancy/assets/images/logo.webp"
             alt=""
           />
         </div>
-        <div className="hidden lg:block w-fit flex items-start">
-          <ul className="flex gap-7 font-medium cursor-pointer">
-            <li className="hover:text-red-500">Home</li>
-            <li className="hover:text-red-500">About</li>
-            <li className="hover:text-red-500">Shop</li>
-            <li className="hover:text-red-500">Blog</li>
-            <li className="hover:text-red-500">Pages</li>
-            <li className="hover:text-red-500">Contact</li>
+        <div className="flex hidden w-fit items-start lg:block">
+          <ul className="flex cursor-pointer gap-7 font-medium">
+            <li className="hover:text-[#ff6565]">Home</li>
+            <li className="hover:text-[#ff6565]">About</li>
+            <li className="hover:text-[#ff6565]">Shop</li>
+            <li className="hover:text-[#ff6565]">Blog</li>
+            <li className="hover:text-[#ff6565]">Pages</li>
+            <li className="hover:text-[#ff6565]">Contact</li>
           </ul>
         </div>
       </div>
-      <div className="flex gap-5 items-center md:px-8">
-        <div className="flex gap-4">
+      <div className="flex items-center gap-5 md:px-8">
+        <div className="flex cursor-pointer gap-4">
           <IoSearchOutline size={22} />
           <FaBasketShopping size={20} />
           <MdPerson size={23} />
         </div>
-        <div className="lg:hidden flex items-center">
+        <div className="flex cursor-pointer items-center lg:hidden">
           <IoMenu size={25} />
         </div>
       </div>
