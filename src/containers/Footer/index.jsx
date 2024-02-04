@@ -9,7 +9,7 @@ function Footer() {
     <div className="flex min-h-96 flex-col justify-between bg-[#fafafa] pt-5">
       <div className="container max-w-6xl px-5 lg:mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div className="py-3 md:py-20">
+          <div className="py-3 lg:py-20">
             <img
               src="https://template.hasthemes.com/brancy/brancy/assets/images/logo.webp"
               alt=""
@@ -19,7 +19,7 @@ function Footer() {
               industry. Lorem Ipsum has been.
             </p>
           </div>
-          <div className="py-3 md:py-20">
+          <div className="py-3 lg:py-20">
             <h3 className="pb-5 text-xl font-bold">Information</h3>
             <div className="grid grid-cols-3">
               <h3 className="footer_logo">Blog</h3>
@@ -32,7 +32,7 @@ function Footer() {
               <h3 className="footer_logo">FAQs</h3>
             </div>
           </div>
-          <div className="py-3 md:py-20">
+          <div className="py-3 lg:py-20">
             <h3 className="pb-5 text-xl font-bold">Social Info</h3>
             <div className="flex gap-11 py-5">
               <FaTwitter
@@ -51,7 +51,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center border-t-2 py-5 cursor-pointer">
+      <div className="flex cursor-pointer flex-wrap items-center justify-center border-t-2 py-5">
         © 2022 Cosmetic. Made with{' '}
         <span className="px-1 pt-[0.1rem]">
           <TiHeartFullOutline color="red" />

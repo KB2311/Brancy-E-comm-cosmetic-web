@@ -9,12 +9,12 @@ function BlogCards({ name, imageUrl, badge }) {
       </div>
       <div className="pt-3">
         <div className="relative py-5">
-          <Badge badge={badge} />
+          <Badge badge={badge} className="left-0 w-fit" />
         </div>
-        <div className="cursor-pointer md:text-2xl hover:text-[#ff6565]">
+        <div className="cursor-pointer hover:text-[#ff6565] md:text-2xl">
           {name}
         </div>
-        <div className="flex flex-col md:flex-row text-sm md:text-base gap-1 justify-between md:pt-5 pt-3">
+        <div className="flex flex-col justify-between gap-1 pt-3 text-sm md:flex-row md:pt-5 md:text-base">
           <div>
             BY:
             <span className="cursor-pointer hover:text-[#ff6565]">
