@@ -9,10 +9,10 @@ import ProductsDivider from './containers/ProductsDivider';
 import Blogs from './containers/Blogs';
 import JoinUs from './containers/JoinUs';
 import Footer from './containers/Footer';
+import TopSalesAfterDivider from './containers/TopSalesAfterDivider';
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
-
 
 const root = createRoot(document.getElementById('app'));
 root.render(
@@ -22,6 +22,7 @@ root.render(
     <Categories />
     <TopSales />
     <ProductsDivider />
+    <TopSalesAfterDivider />
     <Blogs />
     <JoinUs />
     <Footer />

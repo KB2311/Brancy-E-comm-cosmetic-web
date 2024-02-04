@@ -2,32 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer components {
+@layer components {
+  .rotate img {
+    transform: rotateY(0deg);
+    transition: all 0.5s;
+  }
+  .rotate:hover img {
+    transform: rotateY(360deg);
+  }
+  .topCard img {
+    transform: scale(1);
+    transition: all 0.5s;
+  }
+  .topCard:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
   .badge {
-    @apply absolute -top-2 right-0 -rotate-90 px-4 py-2 rounded-full;
-
-    &--red {
-      @apply bg-red-300;
-    }
-
-    &--green {
-      @apply bg-green-300;
-    }
-  }
-  .btn {
+    @apply absolute right-2 top-2 cursor-pointer rounded-full px-6 py-1 font-medium text-white;
   }
 
-  .card {
-    @apply flex flex-col gap-4 items-center justify-center max-w-48 aspect-4/3 md:aspect-3/4 rounded-2xl relative my-6;
+  .social_logo {
+    @apply -rotate-90 cursor-pointer md:rotate-0;
   }
-} */
-.hero::before {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 0;
+  .footer_logo {
+    @apply h-10 w-28 cursor-pointer hover:text-[#ff6565];
+  }
+}
+
+html {
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff6565;
+    border-radius: 100px;
+  }
+}
+
+.bg_joinus {
+  background-image: url('https://template.hasthemes.com/brancy/brancy/assets/images/photos/bg1.webp');
+}
+
+.dates_hero::after {
+  height: 2px;
+  width: 50px;
   content: '';
-  background-color: #d9f1e1;
-  z-index: -1;
+  background-color: #f3b7a2;
+  display: inline-block;
+}
+.dates_hero::before {
+  height: 2px;
+  width: 50px;
+  content: '';
+  background-color: #f3b7a2;
+  display: inline-block;
+}
+
+.loges_hero::before {
+  height: 0.5px;
+  width: 140px;
+  content: '';
+  background-color: #fff;
+  display: inline-block;
 }

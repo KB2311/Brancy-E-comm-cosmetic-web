@@ -1,38 +1,29 @@
 import React from 'react';
+import clsx from 'clsx';
+import Badge from '../Badge';
 
-const Card = () => {
-  return <div>Card</div>;
-};
+function Card({ name, className, imageUrl, badge }) {
+  return (
+    <div
+      className={clsx(
+        'rotate relative flex aspect-[4/3] max-w-48 cursor-pointer flex-col items-center justify-center gap-7 rounded-xl py-2 duration-500 hover:shadow-xl md:aspect-[3/4]',
+        {
+          [className]: !!className,
+        },
+      )}
+    >
+      {badge ? <Badge badge={badge} /> : ''}
+      <img
+        className=""
+        src={imageUrl}
+        width={70}
+        height={70}
+        alt="image_logo"
+      />
+      <div className="h-1 w-10 bg-red-500" />
+      <div>{name}</div>
+    </div>
+  );
+}
 
 export default Card;
-
-// const cards = [
-//   {
-//     title: 'Natural',
-//     imageUrl:
-//       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/6.webp',
-//     className: 'bg-red-200 flex-grow flex-shrink-0 basis-44',
-//     badge: 'new',
-//   },
-//   {
-//     title: 'Hare Care',
-//     imageUrl:
-//       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/1.webp',
-//     className: 'bg-blue-200 flex-grow flex-shrink-0 basis-44',
-//     badge: 'hot',
-//   },
-//   {
-//     title: 'Skin Care',
-//     imageUrl:
-//       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/2.webp',
-//     className: 'bg-purple-200 flex-grow flex-shrink-0 basis-44',
-//   },
-//   {
-//     title: 'Test Care',
-//     imageUrl:
-//       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/2.webp',
-//     className: 'bg-purple-200 flex-grow flex-shrink-0 basis-44',
-//   },
-// ];
-
-// Render your React component instead

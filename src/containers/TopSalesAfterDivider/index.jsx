@@ -23,40 +23,12 @@ const Topcards = [
       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/3.webp',
     badge: 'new',
   },
-  {
-    id: 4,
-    title: 'Impulse Duffle',
-    imageUrl:
-      'https://template.hasthemes.com/brancy/brancy/assets/images/shop/4.webp',
-    badge: 'new',
-  },
-  {
-    id: 5,
-    title: 'Sprite Yoga Straps1',
-    imageUrl:
-      'https://template.hasthemes.com/brancy/brancy/assets/images/shop/5.webp',
-    badge: 'new',
-  },
-  {
-    id: 6,
-    title: 'Fusion facial cream',
-    imageUrl:
-      'https://template.hasthemes.com/brancy/brancy/assets/images/shop/6.webp',
-    badge: 'new',
-  },
 ];
 
-function TopSales() {
+function TopSalesAfterDivider() {
   return (
     <div className="min-h-screen">
       <div className="container mx-auto max-w-6xl">
-        <div className="w-full">
-          <h2 className="pb-6 text-center text-5xl">Top Sales</h2>
-          <p className="mx-auto max-w-[430px] text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis
-          </p>
-        </div>
         <div className="grid w-full grid-cols-2 gap-7 px-5 pt-10 lg:grid-cols-3">
           {Topcards.map(x => (
             <TopSalesCards
@@ -73,4 +45,4 @@ function TopSales() {
   );
 }
 
-export default TopSales;
+export default TopSalesAfterDivider;

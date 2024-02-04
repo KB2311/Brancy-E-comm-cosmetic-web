@@ -6,7 +6,7 @@ import { IoMenu } from 'react-icons/io5';
 
 function Header() {
   return (
-    <div className="fixed flex w-full justify-between px-3 pt-3 md:pt-0">
+    <div className=" fixed z-50 flex w-full justify-between bg-white bg-opacity-60 px-3 pt-3 md:pt-0">
       <div className="flex h-16 items-center ">
         <div className="cursor-pointer md:w-40">
           <img
@@ -27,10 +27,16 @@ function Header() {
         </div>
       </div>
       <div className="flex items-center gap-5 md:px-8">
-        <div className="flex cursor-pointer gap-4">
-          <IoSearchOutline size={22} />
-          <FaBasketShopping size={20} />
-          <MdPerson size={23} />
+        <div className="flex gap-4">
+          <IoSearchOutline
+            className="cursor-pointer hover:text-[#ff6565]"
+            size={22}
+          />
+          <FaBasketShopping
+            className="cursor-pointer hover:text-[#ff6565]"
+            size={20}
+          />
+          <MdPerson className="cursor-pointer hover:text-[#ff6565]" size={23} />
         </div>
         <div className="flex cursor-pointer items-center lg:hidden">
           <IoMenu size={25} />
