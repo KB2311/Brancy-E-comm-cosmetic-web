@@ -6,13 +6,13 @@ function Card({ name, className, imageUrl, badge }) {
   return (
     <div
       className={clsx(
-        'rotate relative flex aspect-[4/3] max-w-48 cursor-pointer flex-col items-center justify-center gap-7 rounded-xl py-2 duration-500 hover:shadow-xl md:aspect-[3/4]',
+        'rotate relative pt-10 flex aspect-[4/3] max-w-48 cursor-pointer flex-col items-center justify-center gap-7 rounded-xl py-2 duration-500 hover:shadow-xl md:aspect-[3/4]',
         {
           [className]: !!className,
         },
       )}
     >
-      {badge ? <Badge badge={badge} /> : ''}
+      {badge ? <Badge badge={badge} className="md:-rotate-90  md:-top-2" /> : ''}
       <img
         className=""
         src={imageUrl}

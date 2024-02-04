@@ -20,7 +20,7 @@
   }
 
   .badge {
-    @apply absolute right-2 top-2 cursor-pointer rounded-full px-6 py-1 font-medium text-white;
+    @apply absolute right-1 top-1 cursor-pointer rounded-full px-3  font-medium text-white sm:px-6 sm:py-1;
   }
 
   .social_logo {
