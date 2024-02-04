@@ -24,7 +24,7 @@
   }
 
   .social_logo {
-    @apply -rotate-90 cursor-pointer md:rotate-0;
+    @apply -rotate-90 cursor-pointer hover:text-[#ff6565] md:rotate-0;
   }
   .footer_logo {
     @apply h-10 w-28 cursor-pointer hover:text-[#ff6565];
