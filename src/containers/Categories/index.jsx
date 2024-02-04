@@ -52,7 +52,7 @@ const cards = [
 function Categories() {
   return (
     <div className="min-h-fit py-20">
-      <div className=" mx-2  flex h-full flex-wrap items-center justify-center gap-9">
+      <div className=" mx-2 flex h-full flex-wrap items-center justify-center gap-3 md:gap-10">
         {cards.map(x => (
           <Card
             key={x.id}

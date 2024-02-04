@@ -15,7 +15,7 @@ function Header() {
             alt=""
           />
         </div>
-        <div className="flex hidden w-fit items-start lg:block">
+        <div className="flex hidden w-fit items-start md:block">
           <ul className="flex cursor-pointer gap-7 font-medium">
             <li className="hover:text-[#ff6565]">Home</li>
             <li className="hover:text-[#ff6565]">About</li>
@@ -38,7 +38,7 @@ function Header() {
           />
           <MdPerson className="cursor-pointer hover:text-[#ff6565]" size={23} />
         </div>
-        <div className="flex cursor-pointer items-center lg:hidden">
+        <div className="flex cursor-pointer items-center md:hidden">
           <IoMenu size={25} />
         </div>
       </div>

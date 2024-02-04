@@ -9,17 +9,17 @@ function Footer() {
     <div className="flex min-h-96 flex-col justify-between bg-[#fafafa] pt-5">
       <div className="container max-w-6xl px-5 lg:mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div className="py-3 lg:py-20">
+          <div className="py-3 lg:py-20 lg:pl-14">
             <img
               src="https://template.hasthemes.com/brancy/brancy/assets/images/logo.webp"
               alt=""
             />
-            <p className="pr-24 pt-5">
+            <p className="pr-3 pt-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been.
             </p>
           </div>
-          <div className="py-3 lg:py-20">
+          <div className="py-3 lg:py-20 lg:pl-14">
             <h3 className="pb-5 text-xl font-bold">Information</h3>
             <div className="grid grid-cols-3">
               <h3 className="footer_logo">Blog</h3>
@@ -32,7 +32,7 @@ function Footer() {
               <h3 className="footer_logo">FAQs</h3>
             </div>
           </div>
-          <div className="py-3 lg:py-20">
+          <div className="py-3 lg:py-20 lg:pl-14">
             <h3 className="pb-5 text-xl font-bold">Social Info</h3>
             <div className="flex gap-11 py-5">
               <FaTwitter

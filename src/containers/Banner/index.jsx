@@ -45,14 +45,14 @@ function Banner() {
         <div className="absolute right-0 top-0 -z-10 h-full w-1/2 bg-[#d9f1e1]">
           <span className="sr-only">green right</span>
         </div>
-        <div className="absolute -left-20 bottom-32 -rotate-90 md:bottom-10 md:left-8 md:rotate-0">
+        <div className="absolute -left-20 bottom-24 -rotate-90 md:bottom-2 md:left-8 md:rotate-0">
           <span className="dates_hero flex w-52 items-center justify-center">
-            <span className="px-2 text-xl">05</span>
+            <span className="px-2 text-xl">01</span>
             <span className="text-xl">/</span>
             <span className="px-2 text-xl">02</span>
           </span>
         </div>
-        <div className="absolute -right-[10.4rem] bottom-52 rotate-90 md:bottom-10 md:right-8 md:rotate-0">
+        <div className="absolute -right-[10.4rem] bottom-52 rotate-90 md:bottom-3 md:right-8 md:rotate-0">
           <span className="loges_hero flex w-96 items-center justify-end">
             <span className="px-3">
               <div className="flex gap-8">
