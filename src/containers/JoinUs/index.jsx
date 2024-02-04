@@ -3,7 +3,7 @@ import { FaTelegramPlane } from 'react-icons/fa';
 
 function JoinUs() {
   return (
-    <div className="min-h-64 py-10 pt-5">
+    <div className="min-h-64 px-5 py-10 pt-5">
       <div className="bg_joinus container flex h-56 max-w-6xl overflow-hidden rounded-xl md:mx-auto">
         <div className="flex w-full flex-col items-center justify-evenly gap-6 px-3 md:flex-row">
           <div className="pt-5 text-center md:text-left">
