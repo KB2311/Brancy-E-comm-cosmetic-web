@@ -27,7 +27,7 @@ const Topcards = [
 
 function TopSalesAfterDivider() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-fit">
       <div className="container mx-auto max-w-6xl">
         <div className="grid w-full grid-cols-2 gap-7 px-5 pt-10 lg:grid-cols-3">
           {Topcards.map(x => (
