@@ -5,8 +5,8 @@ import { FaFacebookF } from 'react-icons/fa';
 
 function Banner() {
   return (
-    <section className="md:min-h-screen">
-      <div className="hero relative min-h-screen py-5">
+    <section className="md:min-h-fit">
+      <div className="hero relative md:min-h-fit py-5">
         {/* <div className='dates'><span>02 / 02</span></div> */}
         <div className="flex min-h-full items-center justify-center md:pt-20">
           <div className="flex max-w-7xl flex-col  items-center justify-center px-10 md:flex-row lg:w-full">
