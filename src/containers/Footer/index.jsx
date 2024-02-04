@@ -52,7 +52,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex cursor-pointer flex-wrap items-center justify-center border-t-2 py-5">
-        © 2022 Cosmetic. Made with{' '}
+        © 2024 Brancy. Made with{' '}
         <span className="px-1 pt-[0.1rem]">
           <TiHeartFullOutline color="red" />
         </span>
