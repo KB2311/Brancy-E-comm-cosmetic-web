@@ -9,7 +9,7 @@ function TopSalesCards({ name, imageUrl, badge }) {
       <div className="flex overflow-hidden rounded-xl">
         {' '}
 
-        {badge ? <Badge badge={badge} className='' /> : ''}
+        {badge ? <Badge badge={badge} className='sm:top-5 sm:right-5' /> : ''}
         <img className=" flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
       </div>
       <div className="mt-3 flex flex-col gap-1 sm:gap-3">
