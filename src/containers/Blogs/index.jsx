@@ -27,7 +27,7 @@ const Blogcards = [
 
 function Blogs() {
   return (
-    <div className="min-h-screen pt-5">
+    <div className="min-h-fit pt-5">
       <div className="container mx-auto max-w-6xl">
         <div className="w-full">
           <h2 className="pb-6 text-center text-5xl">Blog Posts</h2>
