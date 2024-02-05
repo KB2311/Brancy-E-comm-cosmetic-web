@@ -1,17 +1,16 @@
 import React from 'react';
-import { FaPinterestP } from 'react-icons/fa6';
-import { FaTwitter } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
+import PinterestIcon from '../../icons/pinterest-icon.svg';
+import TwitterIcon from '../../icons/twitter-icon.svg';
+import FacebookIcon from '../../icons/facebook-round-icon.svg';
 
 function Banner() {
   return (
     <section className="min-h-fit">
       <div className="hero relative min-h-fit py-5">
-        {/* <div className='dates'><span>02 / 02</span></div> */}
-        <div className="flex min-h-full items-center justify-center md:pt-20">
-          <div className="flex max-w-7xl flex-col  items-center justify-center px-10 md:flex-row lg:w-full">
+        <div className="flex items-center justify-center md:pt-20">
+          <div className="px-container mx-auto flex flex-col items-center justify-center md:flex-row">
             {/* left section hero */}
-            <div className="mt-40 flex w-full flex-1 flex-col items-center justify-center text-center xsm:relative xsm:mt-48 xsm:items-start xsm:text-left md:mt-20">
+            <div className="mt-40 flex flex-1 flex-col items-center justify-center text-center xsm:relative xsm:mt-48 xsm:items-start xsm:text-left md:mt-20">
               <div className="xsm:absolute xsm:-z-10 xsm:mb-48 md:mb-44 lg:mb-64">
                 <img
                   className="object-contain lg:w-80"
@@ -21,10 +20,10 @@ function Banner() {
                   height={97}
                 />
               </div>
-              <div className="w-full text-[5vw] font-bold tracking-wider text-[#231942] lg:text-[60px]">
+              <div className=" text-[5vw] font-bold tracking-wider text-[#231942] lg:text-[60px]">
                 CLEAN FRESH
               </div>
-              <div className="mb-4 w-full lg:text-[21px]">
+              <div className="mb-4 lg:text-[21px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis.
               </div>
@@ -56,9 +55,9 @@ function Banner() {
           <span className="loges_hero flex w-96 items-center justify-end">
             <span className="px-3">
               <div className="flex gap-8">
-                <FaPinterestP className="social_logo" />
-                <FaTwitter className="social_logo" />
-                <FaFacebookF className="social_logo" />
+                <PinterestIcon width={24} height={24} className="social_logo" />
+                <TwitterIcon width={24} height={24} className="social_logo" />
+                <FacebookIcon width={24} height={24} className="social_logo" />
               </div>
             </span>
           </span>

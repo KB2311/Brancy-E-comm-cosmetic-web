@@ -48,16 +48,14 @@ const Topcards = [
 
 function TopSales() {
   return (
-    <div className="min-h-screen">
-      <div className="container mx-auto max-w-6xl">
-        <div className="w-full">
-          <h2 className="pb-6 text-center text-5xl">Top Sales</h2>
-          <p className="mx-auto max-w-[430px] text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis
-          </p>
-        </div>
-        <div className="grid w-full grid-cols-2 gap-7 px-5 pt-10 lg:grid-cols-3">
+    <section id="topsales" className="min-h-screen">
+      <div className="px-container mx-auto">
+        <h2 className="pb-6 text-center text-5xl">Top Sales</h2>
+        <p className="mx-auto max-w-[430px] text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+          purus sit amet luctus venenatis
+        </p>
+        <div className="grid grid-cols-2 gap-7 pt-10 lg:grid-cols-3">
           {Topcards.map(x => (
             <TopSalesCards
               key={x.id}
@@ -69,7 +67,7 @@ function TopSales() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

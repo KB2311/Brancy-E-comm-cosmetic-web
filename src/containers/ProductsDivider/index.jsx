@@ -19,15 +19,15 @@ const Divider = [
 ];
 function ProductsDivider() {
   return (
-    <div className="min-h-96">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid w-full grid-cols-2 gap-7 px-5 pt-10 lg:grid-cols-3">
+    <section id="productdivider" className="min-h-96">
+      <div className="px-container mx-auto">
+        <div className="grid grid-cols-2 gap-7 pt-10 lg:grid-cols-3">
           {Divider.map(x => (
             <DividerCard key={x.id} imageUrl={x.imageUrl} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

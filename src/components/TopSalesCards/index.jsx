@@ -5,11 +5,17 @@ import Badge from '../Badge';
 
 function TopSalesCards({ name, imageUrl, badge }) {
   return (
-    <div className="topCard relative mx-auto max-w-96">
+    <div className="topCard relative mx-auto">
       <div className="flex overflow-hidden rounded-xl">
         {' '}
-
-        {badge ? <Badge badge={badge} className='sm:top-5 sm:right-5' /> : ''}
+        {badge ? (
+          <Badge
+            badge={badge}
+            className="right-1 top-1 xsm:right-3 xsm:top-3"
+          />
+        ) : (
+          ''
+        )}
         <img className=" flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
       </div>
       <div className="mt-3 flex flex-col gap-1 sm:gap-3">

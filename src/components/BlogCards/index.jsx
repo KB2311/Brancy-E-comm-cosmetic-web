@@ -3,7 +3,7 @@ import Badge from '../Badge';
 
 function BlogCards({ name, imageUrl, badge }) {
   return (
-    <div className="topCard mx-auto max-w-96">
+    <div className="topCard mx-auto">
       <div className="flex overflow-hidden rounded-xl">
         <img className="flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
       </div>

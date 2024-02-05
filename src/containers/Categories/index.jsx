@@ -8,7 +8,7 @@ const cards = [
     title: 'Hare Care',
     imageUrl:
       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/1.webp',
-    className: 'bg-green-300 flex-grow flex-shrink-0 basis-44',
+    className: 'bg-green-300',
     badge: 'hot',
   },
   {
@@ -16,43 +16,43 @@ const cards = [
     title: 'Skin Care',
     imageUrl:
       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/2.webp',
-    className: 'bg-yellow-300 flex-grow flex-shrink-0 basis-44',
+    className: 'bg-yellow-300',
   },
   {
     id: 3,
     title: 'Lip stick',
     imageUrl:
       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/3.webp',
-    className: 'bg-blue-300 flex-grow flex-shrink-0 basis-44',
+    className: 'bg-blue-300',
   },
   {
     id: 4,
     title: 'Face skin',
     imageUrl:
       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/4.webp',
-    className: 'bg-pink-300 flex-grow flex-shrink-0 basis-44',
+    className: 'bg-pink-300',
   },
   {
     id: 5,
     title: 'Blusher',
     imageUrl:
       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/5.webp',
-    className: 'bg-red-200 flex-grow flex-shrink-0 basis-44',
+    className: 'bg-red-200',
   },
   {
     id: 6,
     title: 'Natural',
     imageUrl:
       'https://template.hasthemes.com/brancy/brancy/assets/images/shop/category/6.webp',
-    className: 'bg-yellow-100 flex-grow flex-shrink-0 basis-44',
+    className: 'bg-yellow-100',
     badge: 'new',
   },
 ];
 
 function Categories() {
   return (
-    <div className="min-h-fit py-20">
-      <div className=" mx-2 flex h-full flex-wrap items-center justify-center gap-3 md:gap-10">
+    <section className="min-h-fit py-20">
+      <div className="px-sm-container grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
         {cards.map(x => (
           <Card
             key={x.id}
@@ -63,7 +63,7 @@ function Categories() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

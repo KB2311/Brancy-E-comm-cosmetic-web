@@ -27,9 +27,9 @@ const Topcards = [
 
 function TopSalesAfterDivider() {
   return (
-    <div className="min-h-fit">
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid w-full grid-cols-2 gap-7 px-5 pt-10 lg:grid-cols-3">
+    <section id="top_devider" className="min-h-fit">
+      <div className="px-container mx-auto">
+        <div className="grid grid-cols-2 gap-7 pt-10 lg:grid-cols-3">
           {Topcards.map(x => (
             <TopSalesCards
               key={x.id}
@@ -41,7 +41,7 @@ function TopSalesAfterDivider() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

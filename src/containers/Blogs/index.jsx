@@ -27,8 +27,8 @@ const Blogcards = [
 
 function Blogs() {
   return (
-    <div className="min-h-fit pt-5">
-      <div className="container mx-auto max-w-6xl">
+    <section className="min-h-fit pt-5">
+      <div className="px-container mx-auto">
         <div className="w-full">
           <h2 className="pb-6 text-center text-5xl">Blog Posts</h2>
           <p className="mx-auto max-w-[430px] text-center">
@@ -36,7 +36,7 @@ function Blogs() {
             purus sit amet luctus venenatis
           </p>
         </div>
-        <div className="grid w-full grid-cols-2 gap-7 px-5 pt-10 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-7 lg:grid-cols-3">
           {Blogcards.map(x => (
             <BlogCards
               key={x.id}
@@ -47,7 +47,7 @@ function Blogs() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

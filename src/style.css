@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .nav_link {
+    @apply cursor-pointer hover:text-[#ff6565];
+  }
+
   .rotate img {
     transform: rotateY(0deg);
     transition: all 0.5s;
@@ -20,14 +24,17 @@
   }
 
   .badge {
-    @apply absolute right-2 top-2 cursor-pointer rounded-full px-3 font-medium text-white  sm:right-2 sm:top-2 sm:px-6 sm:py-1;
+    @apply absolute cursor-pointer rounded-full px-3 font-medium text-white sm:px-6 sm:py-1;
   }
 
   .social_logo {
-    @apply -rotate-90 cursor-pointer hover:text-[#ff6565] md:rotate-0;
+    @apply -rotate-90 cursor-pointer hover:fill-[#ff6565] md:rotate-0;
   }
   .footer_logo {
-    @apply h-10 w-28 cursor-pointer hover:text-[#ff6565];
+    @apply cursor-pointer hover:text-[#ff6565];
+  }
+  .footer_box {
+    @apply py-3 lg:py-20 lg:pl-14;
   }
 }
 
@@ -45,6 +52,7 @@ html {
 }
 
 .bg_joinus {
+  background-size: cover;
   background-image: url('https://template.hasthemes.com/brancy/brancy/assets/images/photos/bg1.webp');
 }
 
