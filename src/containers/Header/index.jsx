@@ -10,7 +10,7 @@ function Header() {
       id="header"
       className="px-container fixed z-50 flex w-full justify-between gap-10 bg-white bg-opacity-60 py-2"
     >
-      <a href="#home" alt="logo_Brancy">
+      <a href="#home" aria-label="brancy">
         <img
           className="h-12 object-fill"
           src="https://template.hasthemes.com/brancy/brancy/assets/images/logo.webp"
@@ -19,22 +19,22 @@ function Header() {
       </a>
       <nav className="hidden flex-1 items-center md:flex">
         <ul className="flex gap-7 font-medium">
-          <a href="#home">
+          <a href="#home" aria-label="link">
             <li className="nav_link">Home</li>
           </a>
-          <a href="#about">
+          <a href="#about" aria-label="link">
             <li className="nav_link">About</li>
           </a>
-          <a href="#shop">
+          <a href="#shop" aria-label="link">
             <li className="nav_link">Shop</li>
           </a>
-          <a href="#blog">
+          <a href="#blog" aria-label="link">
             <li className="nav_link">Blog</li>
           </a>
-          <a href="#pages">
+          <a href="#pages" aria-label="link">
             <li className="nav_link">Pages</li>
           </a>
-          <a href="#contact">
+          <a href="#contact" aria-label="link">
             <li className="nav_link">Contact</li>
           </a>
         </ul>

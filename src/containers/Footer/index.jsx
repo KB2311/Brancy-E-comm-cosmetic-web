@@ -13,7 +13,7 @@ function Footer() {
       <div className="px-container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="footer_box">
-            <a href="#home" alt="Logo_Brancy">
+            <a href="#home" aria-label="Logo_Brancy">
               <img
                 src="https://template.hasthemes.com/brancy/brancy/assets/images/logo.webp"
                 alt=""
