@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MenuIcon from '../../icons/Menu.svg';
 import SearchIcon from '../../icons/Search.svg';
 import ProfileIcon from '../../icons/Profile.svg';
@@ -8,7 +9,7 @@ function Header() {
   return (
     <header
       id="header"
-      className="px-container fixed z-50 flex w-full justify-between gap-10 bg-white bg-opacity-60 py-2"
+      className="fixed z-50 flex w-full justify-between gap-10 bg-white bg-opacity-60 px-container py-2"
     >
       <a href="#home" aria-label="brancy">
         <img
@@ -19,24 +20,36 @@ function Header() {
       </a>
       <nav className="hidden flex-1 items-center md:flex">
         <ul className="flex gap-7 font-medium">
-          <a href="#home" aria-label="link">
-            <li className="nav_link">Home</li>
-          </a>
-          <a href="#about" aria-label="link">
-            <li className="nav_link">About</li>
-          </a>
-          <a href="#shop" aria-label="link">
-            <li className="nav_link">Shop</li>
-          </a>
-          <a href="#blog" aria-label="link">
-            <li className="nav_link">Blog</li>
-          </a>
-          <a href="#pages" aria-label="link">
-            <li className="nav_link">Pages</li>
-          </a>
-          <a href="#contact" aria-label="link">
-            <li className="nav_link">Contact</li>
-          </a>
+          <li>
+            <Link to="/" className="nav_link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="nav_link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="nav_link">
+              Shop
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="nav_link">
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/product" className="nav_link">
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="nav_link">
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="flex items-center gap-5 md:px-8">

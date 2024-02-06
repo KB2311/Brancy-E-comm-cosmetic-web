@@ -1,30 +1,44 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
-import Header from './containers/Header';
-import Banner from './containers/Banner';
-import Categories from './containers/Categories';
-import TopSales from './containers/TopSales';
-import ProductsDivider from './containers/ProductsDivider';
-import Blogs from './containers/Blogs';
-import JoinUs from './containers/JoinUs';
-import Footer from './containers/Footer';
-import TopSalesAfterDivider from './containers/TopSalesAfterDivider';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import About from './Pages/About';
+import DashboardLayout from './Layout/dashboardLayout';
+import Home from './Pages/Home';
+import ErrorPage from './Pages/ErrorPage';
+import Products from './Pages/Products';
+import ProducDetails from './Pages/ProductsDetails';
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <DashboardLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/product',
+        element: <Products />,
+        children: [
+          {
+            path: ':id',
+            element: <ProducDetails />,
+          },
+        ],
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+    ],
+  },
+]);
+
 const root = createRoot(document.getElementById('app'));
-root.render(
-  <>
-    <Header />
-    <Banner />
-    <Categories />
-    <TopSales />
-    <ProductsDivider />
-    <TopSalesAfterDivider />
-    <Blogs />
-    <JoinUs />
-    <Footer />
-  </>,
-);
+root.render(<RouterProvider router={router} />);
