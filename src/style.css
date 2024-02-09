@@ -36,6 +36,23 @@
   .footer_box {
     @apply py-3 lg:py-20 lg:pl-14;
   }
+  .buttonCarts {
+    @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white px-2 ring-2 ring-red-400;
+  }
+
+  .addcart_div {
+    /* @apply hidden; */
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    transition: all 0.7s ease;
+  }
+  .topCard:hover .addcart_div {
+    @apply block;
+    position: absolute;
+    transform: translateY(-80px);
+  }
 }
 
 html {

@@ -8,7 +8,7 @@ function Banner() {
     <section className="min-h-fit">
       <div className="hero relative min-h-fit py-5">
         <div className="flex items-center justify-center md:pt-20">
-          <div className="px-container mx-auto flex flex-col items-center justify-center md:flex-row">
+          <div className="mx-auto flex flex-col items-center justify-center px-container md:flex-row">
             {/* left section hero */}
             <div className="mt-40 flex flex-1 flex-col items-center justify-center text-center xsm:relative xsm:mt-48 xsm:items-start xsm:text-left md:mt-20">
               <div className="xsm:absolute xsm:-z-10 xsm:mb-48 md:mb-44 lg:mb-64">
@@ -44,6 +44,7 @@ function Banner() {
         <div className="absolute right-0 top-0 -z-10 h-full w-1/2 bg-[#d9f1e1]">
           <span className="sr-only">green right</span>
         </div>
+
         <div className="absolute -left-20 bottom-24 -rotate-90 md:bottom-2 md:left-8 md:rotate-0">
           <span className="dates_hero flex w-52 items-center justify-center">
             <span className="px-2 text-xl">01</span>

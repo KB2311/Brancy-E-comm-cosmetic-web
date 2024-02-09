@@ -8,6 +8,8 @@ import Home from './Pages/Home';
 import ErrorPage from './Pages/ErrorPage';
 import Products from './Pages/Products';
 import ProducDetails from './Pages/ProductsDetails';
+import ClassCompo from './Pages/ClassCompo';
+
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
@@ -35,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
+      },
+      {
+        path: '/classCompo',
+        element: <ClassCompo />,
       },
     ],
   },

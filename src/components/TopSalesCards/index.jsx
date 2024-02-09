@@ -2,11 +2,12 @@ import React from 'react';
 import { CiStar } from 'react-icons/ci';
 import { TiStarFullOutline } from 'react-icons/ti';
 import Badge from '../Badge';
+import ButtonAddCart from '../ButtonAddtoCart';
 
 function TopSalesCards({ name, imageUrl, badge }) {
   return (
     <div className="topCard relative w-full">
-      <div className="flex overflow-hidden rounded-xl">
+      <div className="relative flex overflow-hidden rounded-xl">
         {' '}
         {badge ? (
           <Badge
@@ -17,6 +18,9 @@ function TopSalesCards({ name, imageUrl, badge }) {
           ''
         )}
         <img className=" flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
+        <div className="addcart_div">
+          <ButtonAddCart />
+        </div>
       </div>
       <div className="mt-3 flex flex-col gap-1 sm:gap-3">
         <div className="flex flex-col justify-between sm:flex-row">
