@@ -50,11 +50,6 @@ function Header() {
               Contact
             </Link>
           </li>
-          <li>
-            <Link to='/classCompo' className='nav_link'>
-              ClassComponent
-            </Link>
-          </li>
         </ul>
       </nav>
       <div className="flex items-center gap-5 md:px-8">
