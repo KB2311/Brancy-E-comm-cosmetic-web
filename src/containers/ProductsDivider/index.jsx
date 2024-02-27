@@ -21,7 +21,7 @@ function ProductsDivider() {
   return (
     <section id="productdivider" className="min-h-96">
       <div className="mx-auto px-container">
-        <div className="grid grid-cols-1 gap-7 pt-10 lg:grid-cols-3">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-7 pt-10 lg:grid-cols-3">
           {Divider.map(x => (
             <DividerCard key={x.id} imageUrl={x.imageUrl} />
           ))}
