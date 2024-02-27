@@ -1,5 +1,4 @@
 import React from 'react';
-import { TiHeartFullOutline } from 'react-icons/ti';
 import PinterestIcon from '../../icons/pinterest-icon.svg';
 import TwitterIcon from '../../icons/twitter-icon.svg';
 import FacebookIcon from '../../icons/facebook-round-icon.svg';
@@ -48,11 +47,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex cursor-pointer flex-wrap items-center justify-center border-t-2 py-5">
-        © 2024 Brancy. Made with{' '}
-        <span className="px-1 pt-[0.1rem]">
-          <TiHeartFullOutline color="red" />
-        </span>
-        by Kunjbihari.
+        © 2024 Brancy. Made by Kunjbihari.
       </div>
     </section>
   );
