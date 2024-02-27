@@ -18,7 +18,7 @@ function TopSalesCards({ name, imageUrl, badge }) {
           ''
         )}
         <img className=" flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
-        <div className="addcart_div">
+        <div className="md:addcart_div">
           <ButtonAddCart />
         </div>
       </div>
