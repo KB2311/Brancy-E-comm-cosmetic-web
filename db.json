@@ -1,0 +1,41 @@
+{
+  "Products": [
+    {
+      "id": "1",
+      "title": "Readable content DX22",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/1.webp",
+      "price": 2000
+    },
+    {
+      "id": "2",
+      "title": "Modern Eye Brush",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/2.webp",
+      "price": 6000
+    },
+    {
+      "id": "3",
+      "title": "Voyage face cleaner",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/3.webp",
+      "price": 1000
+    },
+    {
+      "id": "4",
+      "title": "Impulse Duffle",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/4.webp",
+      "price": 2500
+    },
+    {
+      "id": "5",
+      "title": "Sprite Yoga Straps",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/5.webp",
+      "price": 4500
+    },
+    {
+      "id": "6",
+      "title": "Fusion facial cream",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/6.webp",
+      "price": 1500
+    }
+  ],
+  "CartItems": []
+}

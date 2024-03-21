@@ -5,7 +5,6 @@ import TopSales from '../../containers/TopSales';
 import ProductsDivider from '../../containers/ProductsDivider';
 import Blogs from '../../containers/Blogs';
 import JoinUs from '../../containers/JoinUs';
-import TopSalesAfterDivider from '../../containers/TopSalesAfterDivider';
 
 function Home() {
   return (
@@ -14,7 +13,6 @@ function Home() {
       <Categories />
       <TopSales />
       <ProductsDivider />
-      <TopSalesAfterDivider />
       <Blogs />
       <JoinUs />
     </>

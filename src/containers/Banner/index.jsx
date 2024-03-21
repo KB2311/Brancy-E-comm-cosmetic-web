@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PinterestIcon from '../../icons/pinterest-icon.svg';
 import TwitterIcon from '../../icons/twitter-icon.svg';
 import FacebookIcon from '../../icons/facebook-round-icon.svg';
+import { Navigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Banner() {
+  // eslint-disable-next-line no-unused-vars
+  const [date, setDate] = useState(new Date());
+
   return (
-    <section className="min-h-fit">
+    <section className="min-h-fit" id="home">
       <div className="hero relative min-h-fit py-5">
         <div className="flex items-center justify-center md:pt-20">
           <div className="mx-auto flex flex-col items-center justify-center px-container md:flex-row">
@@ -13,30 +18,36 @@ function Banner() {
             <div className="mt-40 flex flex-1 flex-col items-center justify-center text-center xsm:relative xsm:mt-48 xsm:items-start xsm:text-left md:mt-20">
               <div className="xsm:absolute xsm:-z-10 xsm:mb-48 md:mb-44 lg:mb-64">
                 <img
-                  className="object-contain lg:w-80"
+                  className="animation_fade_left object-contain lg:w-80"
                   src="	https://template.hasthemes.com/brancy/brancy/assets/images/slider/text-theme.webp"
                   alt=""
                   width={180}
                   height={97}
                 />
               </div>
-              <div className=" text-[5vw] font-bold tracking-wider text-[#231942] lg:text-[60px]">
+              <div className="animation_fade_up text-[5vw] font-bold tracking-wider text-[#231942] lg:text-[60px]">
                 CLEAN FRESH
               </div>
-              <div className="mb-4 lg:text-[21px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus venenatis.
+              <div className="animation_fade_up_des mb-4 lg:text-[21px]">
+                Discover the transformative magic of Brancy cosmetics, designed
+                to elevate your daily routine with effortless elegance.
               </div>
-              <div className="flex cursor-pointer items-center rounded-full border-2 border-[#231942] bg-white to-teal-500 px-8 py-[0.7rem] text-sm font-medium tracking-[0.2em] text-[#231942] hover:border-[#ff6565] hover:bg-[#ff6565] hover:text-white">
-                BUY NOW
-              </div>
+              <HashLink smooth to="/shop" className="nav_link">
+                <button
+                  type="button"
+                  className="flex cursor-pointer items-center rounded-full border-2 border-[#231942] bg-white to-teal-500 px-8 py-[0.7rem] text-sm font-medium tracking-[0.2em] text-[#231942] hover:border-[#ff6565] hover:bg-[#ff6565] hover:text-white"
+                >
+                  BUY NOW
+                </button>
+              </HashLink>
             </div>
             {/* right section hero */}
             <div className="flex flex-1">
               <img
-                className=""
+                loading="lazy"
+                className="animation_img"
                 src="https://template.hasthemes.com/brancy/brancy/assets/images/slider/slider1.webp"
-                alt=""
+                alt="image_of_cosmetics"
               />
             </div>
           </div>
@@ -47,9 +58,9 @@ function Banner() {
 
         <div className="absolute -left-20 bottom-24 -rotate-90 md:bottom-2 md:left-8 md:rotate-0">
           <span className="dates_hero flex w-52 items-center justify-center">
-            <span className="px-2 text-xl">01</span>
+            <span className="px-2 text-xl">{date.getDate()}</span>
             <span className="text-xl">/</span>
-            <span className="px-2 text-xl">02</span>
+            <span className="px-2 text-xl">{date.getMonth()}</span>
           </span>
         </div>
         <div className="absolute -right-[10.4rem] bottom-52 rotate-90 md:bottom-3 md:right-8 md:rotate-0">

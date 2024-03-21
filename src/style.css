@@ -31,13 +31,14 @@
     @apply -rotate-90 cursor-pointer hover:fill-[#ff6565] md:rotate-0;
   }
   .footer_logo {
-    @apply cursor-pointer hover:text-[#ff6565];
+    @apply cursor-pointer hover:fill-[#ff6565] hover:text-[#ff6565];
   }
   .footer_box {
     @apply py-3 lg:py-20 lg:pl-14;
   }
+
   .buttonCarts {
-    @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white px-2 ring-2 ring-red-400;
+    @apply flex aspect-square cursor-pointer items-center justify-center rounded-full bg-white px-2 ring-2 ring-red-400;
   }
 
   .addcart_div {
@@ -52,6 +53,61 @@
     @apply block;
     position: absolute;
     transform: translateY(-80px);
+  }
+
+  .animation_img {
+    animation: customanim 3s both;
+  }
+  @keyframes customanim {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.5, 0.5, 0.5);
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .animation_fade_left {
+    animation: fade_left 2s 0.3s both;
+  }
+  @keyframes fade_left {
+    0% {
+      opacity: 0;
+      transform: translate3d(-60%, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animation_fade_up {
+    animation: fade_up 3s 0.3s both;
+  }
+  @keyframes fade_up {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 60%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+
+  .animation_fade_up_des {
+    animation: fade_up 3s 0.3s both;
+  }
+
+  @keyframes fade_up {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 60%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
   }
 }
 

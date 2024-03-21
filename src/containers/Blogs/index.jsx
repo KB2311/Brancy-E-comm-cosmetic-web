@@ -27,16 +27,16 @@ const Blogcards = [
 
 function Blogs() {
   return (
-    <section className="min-h-fit pt-5">
+    <section className="min-h-fit pt-12" id="blogs">
       <div className="mx-auto px-container">
         <div className="w-full py-3">
           <h2 className="pb-4 text-center text-5xl">Blog Posts</h2>
-          <p className="mx-auto max-w-[430px] text-center">
+          <p className="mx-auto max-w-[800px] text-center xsm:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-7 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-7 pt-10 sm:grid-cols-2 lg:grid-cols-3">
           {Blogcards.map(x => (
             <BlogCards
               key={x.id}

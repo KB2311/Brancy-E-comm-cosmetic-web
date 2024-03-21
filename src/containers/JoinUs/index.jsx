@@ -11,16 +11,20 @@ function JoinUs() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
           </p>
         </div>
-        <div className="relative flex flex-1 items-center justify-center">
+        <form className="relative flex flex-1 items-center justify-center">
           <input
-            type="text"
+            type="email"
             placeholder="Enter Your Email"
             className="rounded-md px-3 py-2 outline-none ring-1 ring-[#ff6565] xsm:w-80 "
           />
-          <div className="cursor-pointer rounded-md bg-[#ce4820] px-3 py-3 ">
+          <button
+            type="submit"
+            aria-label="joinButton"
+            className="cursor-pointer rounded-md bg-[#ce4820] px-3 py-3 "
+          >
             <FaTelegramPlane size={17} color="white" />
-          </div>
-        </div>
+          </button>
+        </form>
       </div>
     </section>
   );

@@ -6,8 +6,12 @@ import About from './Pages/About';
 import DashboardLayout from './Layout/dashboardLayout';
 import Home from './Pages/Home';
 import ErrorPage from './Pages/ErrorPage';
-import Products from './Pages/Products';
 import ProducDetails from './Pages/ProductsDetails';
+import Shop from './Pages/Shop/Shop';
+import Contact from './Pages/Contact/Contact';
+import Cart from './Pages/Cart/Cart';
+import { ShopContextProvider } from './context/shopContext';
+import Notfound from './Pages/Notfound/Notfound';
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
@@ -23,8 +27,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/product',
-        element: <Products />,
+        path: '/shop',
+        element: <Shop />,
         children: [
           {
             path: ':id',
@@ -36,9 +40,25 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About />,
       },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+      {
+        path: '/cart',
+        element: <Cart />,
+      },
+      {
+        path: '/notfound',
+        element: <Notfound />,
+      },
     ],
   },
 ]);
 
 const root = createRoot(document.getElementById('app'));
-root.render(<RouterProvider router={router} />);
+root.render(
+  <ShopContextProvider>
+    <RouterProvider router={router} />
+  </ShopContextProvider>,
+);

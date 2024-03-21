@@ -1,8 +1,8 @@
 import React from 'react';
-import { TiHeartFullOutline } from 'react-icons/ti';
 import PinterestIcon from '../../icons/pinterest-icon.svg';
 import TwitterIcon from '../../icons/twitter-icon.svg';
 import FacebookIcon from '../../icons/facebook-round-icon.svg';
+import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
   return (
@@ -10,15 +10,15 @@ function Footer() {
       id="footer"
       className="flex min-h-fit flex-col justify-between bg-[#fafafa]"
     >
-      <div className="px-container mx-auto">
+      <div className="mx-auto px-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="footer_box">
-            <a href="#home" aria-label="Logo_Brancy">
+            <HashLink smooth to="/#home" aria-label="Logo_Brancy">
               <img
                 src="https://template.hasthemes.com/brancy/brancy/assets/images/logo.webp"
                 alt=""
               />
-            </a>
+            </HashLink>
             <p className="pr-3 pt-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been.
@@ -26,15 +26,26 @@ function Footer() {
           </div>
           <div className="footer_box">
             <h3 className="pb-5 text-xl font-bold">Information</h3>
-            <div className="grid grid-cols-3">
-              <h3 className="footer_logo">Blog</h3>
-              <h3 className="footer_logo">About us</h3>
-              <h3 className="footer_logo">Contact</h3>
-              <h3 className="footer_logo">Privacy</h3>
-              <h3 className="footer_logo">Login</h3>
-              <h3 className="footer_logo">Shop</h3>
-              <h3 className="footer_logo">My Account</h3>
-              <h3 className="footer_logo">FAQs</h3>
+            <div className="grid grid-cols-3 gap-5">
+              <HashLink smooth to="/#blogs" className="footer_logo">
+                Blog
+              </HashLink>
+              <HashLink to="/about" className="footer_logo">
+                About us
+              </HashLink>
+              <HashLink to="/contact" className="footer_logo">
+                Contact
+              </HashLink>
+              {/* /notfound */}
+              <HashLink to="/notfound" className="footer_logo">
+                Privacy
+              </HashLink>
+              <HashLink to="/shop" className="footer_logo">
+                Shop
+              </HashLink>
+              <HashLink to="/notfound" className="footer_logo">
+                FAQs
+              </HashLink>
             </div>
           </div>
           <div className="footer_box">
@@ -48,11 +59,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex cursor-pointer flex-wrap items-center justify-center border-t-2 py-5">
-        © 2024 Brancy. Made with{' '}
-        <span className="px-1 pt-[0.1rem]">
-          <TiHeartFullOutline color="red" />
-        </span>
-        by Kunjbihari.
+        © 2024 Brancy. Made By Kunjbihari.
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ function Card({ name, className, imageUrl, badge }) {
   return (
     <div
       className={clsx(
-        'rotate relative flex aspect-4/3 w-full flex-shrink-0 flex-grow basis-32 cursor-pointer flex-col items-center justify-between gap-3 rounded-xl py-6 duration-500 hover:shadow-xl',
+        'rotate hover:rotate-y-full aspect-w-3 gap-3 aspect-h-4 relative flex h-52 w-auto transform-gpu flex-col items-center justify-center space-x-4 rounded-xl  transition-transform hover:shadow-2xl md:h-60 lg:h-60 lg:w-full',
         {
           [className]: !!className,
         },

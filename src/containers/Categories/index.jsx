@@ -51,8 +51,8 @@ const cards = [
 
 function Categories() {
   return (
-    <section className="min-h-fit py-10 md:py-20">
-      <div className="grid grid-cols-2 gap-6 px-sm-container sm:grid-cols-3 lg:grid-cols-6">
+    <section className="min-h-fit px-container py-10 md:py-20">
+      <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-3 xl:grid-cols-6">
         {cards.map(x => (
           <Card
             key={x.id}

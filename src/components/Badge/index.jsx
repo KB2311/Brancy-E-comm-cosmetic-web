@@ -26,7 +26,7 @@ function Badge({ badge, className }) {
     case 'beauty':
       return (
         <p
-          className={clsx('badge z-20 bg-[#9cdbff] capitalize', {
+          className={clsx('badge z-20 px-5 hover:bg-purple-500 py-2 bg-[#9cdbff] capitalize', {
             [className]: !!className,
           })}
         >
