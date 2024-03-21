@@ -22,6 +22,7 @@ function TopSalesCards({ name, imageUrl, price, item }) {
     <div className="topCard relative w-full">
       <div className="relative flex overflow-hidden rounded-xl">
         <img className=" flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
+<<<<<<< HEAD
         <div className="addcart_div">
           <form
             onSubmit={onSubmiting}
@@ -41,6 +42,10 @@ function TopSalesCards({ name, imageUrl, price, item }) {
               <HeartIcon />
             </div>
           </form>
+=======
+        <div className="md:addcart_div">
+          <ButtonAddCart />
+>>>>>>> d41e4b716b7783df5577cfea0b724f098c884382
         </div>
       </div>
       <div className="mt-3 flex flex-col gap-1 sm:gap-3">
