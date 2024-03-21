@@ -7,7 +7,7 @@ import MinusIcon from '../../icons/minus-round-icon.svg';
 function Cart() {
   const { Cart, UpdateCart, RemoveCartItem } = useContext(ShopContext);
   return (
-    <section className="min-h-96 pt-20" id='cart'>
+    <section className="min-h-96 pt-20" id="cart">
       <div className="mx-2 flex flex-col items-center gap-5 md:mx-20">
         {Cart.length > 0 ? (
           Cart.map(x => (
@@ -75,8 +75,15 @@ function Cart() {
           ))
         ) : (
           <>
-            <div className="text-xl font-bold">Cart is Empty</div>
-            <HashLink className="text-blue-500 underline" to="/shop">
+            <picture className="flex items-center justify-center">
+              <img
+                className="max-w-lg"
+                src="https://ik.imagekit.io/b8au2iwe2/EmptyCart.jpg?updatedAt=1711033696887"
+                alt=""
+              />
+            </picture>
+            <div className="text-xl font-bold">Woops... Your Cart is Empty</div>
+            <HashLink className="py-5 text-blue-500 underline" to="/shop">
               Countinue Shoping
             </HashLink>
           </>

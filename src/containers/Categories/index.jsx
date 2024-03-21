@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from '../../components/CategoriesCard';
-import Badge from '../../components/Badge';
 
 const cards = [
   {

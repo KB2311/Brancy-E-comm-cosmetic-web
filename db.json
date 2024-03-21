@@ -35,16 +35,19 @@
       "title": "Fusion facial cream",
       "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/6.webp",
       "price": 1500
+    },
+    {
+      "id": "7",
+      "title": "Cosmetic cream",
+      "imageUrl": "https://ik.imagekit.io/b8au2iwe2/Cosmetic%20cream.webp?updatedAt=1711035636832",
+      "price": 3700
+    },
+    {
+      "id": "8",
+      "title": "Offbite instant Age rewinder Eraser",
+      "imageUrl": "https://ik.imagekit.io/b8au2iwe2/dropper_img.webp?updatedAt=1711035603470",
+      "price": 21500
     }
   ],
-  "CartItems": [
-    {
-      "id": "2",
-      "title": "Modern Eye Brush",
-      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/2.webp",
-      "price": 6000,
-      "Quantity": 1,
-      "TotalPrice": 6000
-    }
-  ]
+  "CartItems": []
 }

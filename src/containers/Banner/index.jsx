@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import PinterestIcon from '../../icons/pinterest-icon.svg';
 import TwitterIcon from '../../icons/twitter-icon.svg';
 import FacebookIcon from '../../icons/facebook-round-icon.svg';
-import { Navigate } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+
 
 function Banner() {
   // eslint-disable-next-line no-unused-vars

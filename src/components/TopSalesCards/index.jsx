@@ -60,7 +60,9 @@ function TopSalesCards({ name, imageUrl, price, item }) {
           {name}
         </h3>
         <div className="">
-          <span className="font-medium xsm:text-2xl">&#8377; {price}.00</span>
+          <span className="font-medium xsm:text-2xl">
+            &#8377; {price.toLocaleString('en-IN')}.00
+          </span>
         </div>
       </div>
     </div>
