@@ -59,11 +59,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex cursor-pointer flex-wrap items-center justify-center border-t-2 py-5">
-<<<<<<< HEAD
         © 2024 Brancy. Made By Kunjbihari.
-=======
-        © 2024 Brancy. Made by Kunjbihari.
->>>>>>> d41e4b716b7783df5577cfea0b724f098c884382
       </div>
     </section>
   );
