@@ -6,7 +6,7 @@ import HeartIcon from '../../icons/Heart-Icon.svg';
 import ShopContext from '../../context/shopContext';
 
 function TopSalesCards({ name, imageUrl, price, item }) {
-  const { AddCart, Cart } = useContext(ShopContext);
+  const { AddCart } = useContext(ShopContext);
 
   const [addtocart, setAddtocart] = useState('Add To Cart');
 
@@ -22,7 +22,6 @@ function TopSalesCards({ name, imageUrl, price, item }) {
     <div className="topCard relative w-full">
       <div className="relative flex overflow-hidden rounded-xl">
         <img className=" flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
-<<<<<<< HEAD
         <div className="addcart_div">
           <form
             onSubmit={onSubmiting}
@@ -42,10 +41,6 @@ function TopSalesCards({ name, imageUrl, price, item }) {
               <HeartIcon />
             </div>
           </form>
-=======
-        <div className="md:addcart_div">
-          <ButtonAddCart />
->>>>>>> d41e4b716b7783df5577cfea0b724f098c884382
         </div>
       </div>
       <div className="mt-3 flex flex-col gap-1 sm:gap-3">

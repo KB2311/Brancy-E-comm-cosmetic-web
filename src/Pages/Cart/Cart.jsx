@@ -5,10 +5,9 @@ import PlushIcon from '../../icons/plus-round-icon.svg';
 import MinusIcon from '../../icons/minus-round-icon.svg';
 
 function Cart() {
-  const { Cart, UpdateCart, RemoveCartItem, LoadCart } =
-    useContext(ShopContext);
+  const { Cart, UpdateCart, RemoveCartItem } = useContext(ShopContext);
   return (
-    <section className="min-h-96 pt-20">
+    <section className="min-h-96 pt-20" id='cart'>
       <div className="mx-2 flex flex-col items-center gap-5 md:mx-20">
         {Cart.length > 0 ? (
           Cart.map(x => (

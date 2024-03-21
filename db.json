@@ -37,5 +37,14 @@
       "price": 1500
     }
   ],
-  "CartItems": []
+  "CartItems": [
+    {
+      "id": "2",
+      "title": "Modern Eye Brush",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/2.webp",
+      "price": 6000,
+      "Quantity": 1,
+      "TotalPrice": 6000
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import PinterestIcon from '../../icons/pinterest-icon.svg';
 import TwitterIcon from '../../icons/twitter-icon.svg';
 import FacebookIcon from '../../icons/facebook-round-icon.svg';
-import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
   return (
