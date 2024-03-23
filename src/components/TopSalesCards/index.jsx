@@ -1,13 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { CiStar } from 'react-icons/ci';
 import { TiStarFullOutline } from 'react-icons/ti';
 import ExpandIcon from '../../icons/Expand-Icon.svg';
 import HeartIcon from '../../icons/Heart-Icon.svg';
-import ShopContext from '../../context/shopContext';
 
 function TopSalesCards({ name, imageUrl, price, item }) {
-  const { AddCart } = useContext(ShopContext);
-
   const [addtocart, setAddtocart] = useState('Add To Cart');
 
   const onSubmiting = e => {
@@ -32,7 +29,6 @@ function TopSalesCards({ name, imageUrl, price, item }) {
             </div>
             <button
               type="submit"
-              onClick={() => AddCart(item)}
               className="flex h-10 w-full cursor-pointer items-center justify-center rounded-full bg-white px-2 py-1 text-sm ring-2 ring-red-400 xsm:px-0 xsm:py-0 xsm:text-[100%]"
             >
               {addtocart}

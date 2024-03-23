@@ -3,11 +3,11 @@ import { HashLink } from 'react-router-hash-link';
 import MenuIcon from '../../icons/Menu.svg';
 import BascketIcon from '../../icons/Shoping_basket.svg';
 import CloseIcon from '../../icons/close-icon.svg';
-import ShopContext from '../../context/shopContext';
+import CartContext from '../../context/CartContext';
 
 function Header() {
   const [IsNavopen, setIsNavopen] = useState(false);
-  const { Cart } = useContext(ShopContext);
+  const { Cart } = useContext(CartContext);
 
   return (
     <header
@@ -81,11 +81,11 @@ function Header() {
         </HashLink>
         <MenuIcon
           onClick={() => setIsNavopen(!IsNavopen)}
-          className={`flex md:hidden ${!IsNavopen ? 'block' : 'hidden'}`}
+          className={`flex md:hidden ${IsNavopen ? 'hidden' : 'block'}`}
         />
         <CloseIcon
           onClick={() => setIsNavopen(!IsNavopen)}
-          className={`flex md:hidden ${!IsNavopen ? 'hidden' : 'block'}`}
+          className={`flex md:hidden ${IsNavopen ? 'block' : 'hidden'}`}
         />
       </div>
     </header>

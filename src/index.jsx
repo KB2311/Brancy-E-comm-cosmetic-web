@@ -10,8 +10,9 @@ import ProducDetails from './Pages/ProductsDetails';
 import Shop from './Pages/Shop/Shop';
 import Contact from './Pages/Contact/Contact';
 import Cart from './Pages/Cart/Cart';
-import { ShopContextProvider } from './context/shopContext';
 import Notfound from './Pages/Notfound/Notfound';
+import { ProductContextProvider } from './context/ProductContext';
+import { CartContextProvider } from './context/CartContext';
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
@@ -58,7 +59,9 @@ const router = createBrowserRouter([
 
 const root = createRoot(document.getElementById('app'));
 root.render(
-  <ShopContextProvider>
-    <RouterProvider router={router} />
-  </ShopContextProvider>,
+  <ProductContextProvider>
+    <CartContextProvider>
+      <RouterProvider router={router} />
+    </CartContextProvider>
+  </ProductContextProvider>,
 );

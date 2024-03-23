@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import TopSalesCards from '../../components/TopSalesCards';
-import ShopContext from '../../context/shopContext';
+import ProductContext from '../../context/ProductContext';
+
 
 function TopSales() {
-  const { Products } = useContext(ShopContext);
+  const { Products } = useContext(ProductContext);
   return (
     <section id="topsales" className="min-h-screen">
       <div className="mx-auto px-container">

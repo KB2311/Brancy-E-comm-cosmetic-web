@@ -96,6 +96,7 @@ function About() {
           />
         </div>
       </div>
+      
       <div className="grid grid-cols-1 gap-10 bg-sky-100 px-5 pb-5 pt-10 sm:grid-cols-2 lg:grid-cols-3">
         <div className="mx-5 flex flex-grow flex-col items-center justify-center gap-2 rounded-xl border-2 border-[#ff6565] p-3 lg:mx-auto">
           <div className="feature-item flex flex-col items-start justify-center gap-3 ">

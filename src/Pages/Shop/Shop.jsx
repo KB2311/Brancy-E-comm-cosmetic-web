@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import Card from '../../components/CategoriesCard';
 import TopSalesCards from '../../components/TopSalesCards';
-import ShopContext from '../../context/shopContext';
+import ProductContext from '../../context/ProductContext';
+
 
 const cards = [
   {
@@ -52,7 +53,7 @@ const cards = [
 ];
 
 function Shop() {
-  const { Products } = useContext(ShopContext);
+  const { Products } = useContext(ProductContext);
 
   return (
     <>
