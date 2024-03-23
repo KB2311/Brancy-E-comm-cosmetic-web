@@ -1,13 +1,13 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import MenuIcon from '../../icons/Menu.svg';
 import BascketIcon from '../../icons/Shoping_basket.svg';
 import CloseIcon from '../../icons/close-icon.svg';
-import CartContext from '../../context/CartContext';
+import { useCart } from '../../context/CartContext';
 
 function Header() {
   const [IsNavopen, setIsNavopen] = useState(false);
-  const { Cart } = useContext(CartContext);
+  const { cart } = useCart();
 
   return (
     <header
@@ -76,7 +76,7 @@ function Header() {
         >
           <BascketIcon className="cursor-pointer hover:fill-[#ff6565]" />
           <div className="absolute -right-2 -top-1 flex aspect-square w-6 items-center justify-center rounded-full bg-[#ff6565] font-bold text-white">
-            {Cart.length}
+            {cart.length}
           </div>
         </HashLink>
         <MenuIcon

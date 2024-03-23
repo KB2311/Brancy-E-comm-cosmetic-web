@@ -1,19 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CiStar } from 'react-icons/ci';
 import { TiStarFullOutline } from 'react-icons/ti';
 import ExpandIcon from '../../icons/Expand-Icon.svg';
 import HeartIcon from '../../icons/Heart-Icon.svg';
+import { useCart } from '../../context/CartContext';
 
 function TopSalesCards({ name, imageUrl, price, item }) {
-  const [addtocart, setAddtocart] = useState('Add To Cart');
-
-  const onSubmiting = e => {
-    e.preventDefault();
-    setAddtocart('Item Added');
-    setTimeout(() => {
-      setAddtocart('Add To Cart');
-    }, 2000);
+  // const [addtocart, setAddtocart] = useState('Add To Cart');
+  const { cart, addCart, updateCart } = useCart();
+  const onAddtoCart = item => {
+    const data = cart.find(x => x.id === item.id);
+    if (data) {
+      return updateCart({ ...data, Quantity: data.Quantity + 1 });
+    }
+    return addCart({ ...item, Quantity: 1 });
   };
+  console.log(cart);
+
+  // const onSubmiting = e => {
+  //   e.preventDefault();
+
+  //   setAddtocart('Item Added');
+  //   setTimeout(() => {
+  //     setAddtocart('Add To Cart');
+  //   }, 2000);
+  // };
 
   return (
     <div className="topCard relative w-full">
@@ -21,7 +32,10 @@ function TopSalesCards({ name, imageUrl, price, item }) {
         <img className=" flex-grow rounded-xl" src={imageUrl} alt="img_logo" />
         <div className="addcart_div">
           <form
-            onSubmit={onSubmiting}
+            onSubmit={e => {
+              e.preventDefault();
+              return onAddtoCart(item);
+            }}
             className="flex w-full items-center gap-5 px-10 lg:px-7"
           >
             <div className="buttonCarts">
@@ -31,7 +45,7 @@ function TopSalesCards({ name, imageUrl, price, item }) {
               type="submit"
               className="flex h-10 w-full cursor-pointer items-center justify-center rounded-full bg-white px-2 py-1 text-sm ring-2 ring-red-400 xsm:px-0 xsm:py-0 xsm:text-[100%]"
             >
-              {addtocart}
+              Add To Cart
             </button>
             <div className="buttonCarts">
               <HeartIcon />
