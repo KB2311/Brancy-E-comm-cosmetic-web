@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import MenuIcon from '../../icons/Menu.svg';
 import BascketIcon from '../../icons/Shoping_basket.svg';
+import ProfileIcon from '../../icons/Profile.svg';
 import CloseIcon from '../../icons/close-icon.svg';
 import { useCart } from '../../context/CartContext';
 
@@ -79,6 +80,9 @@ function Header() {
             {cart.length}
           </div>
         </HashLink>
+        <div className="cursor-pointer rounded-full p-1 ring-2 ring-black hover:fill-[#ff6565] hover:ring-[#ff6565]">
+          <ProfileIcon />
+        </div>
         <MenuIcon
           onClick={() => setIsNavopen(!IsNavopen)}
           className={`flex md:hidden ${IsNavopen ? 'hidden' : 'block'}`}

@@ -5,7 +5,6 @@ import React, {
   useEffect,
   useMemo,
   useReducer,
-  useRef,
 } from 'react';
 import PropTypes from 'prop-types';
 // eslint-disable-next-line import/no-unresolved
@@ -41,8 +40,6 @@ const cartReducer = (
 
 export function CartProvider({ children }) {
   const [cartState, dispatch] = useReducer(cartReducer, cartInitialState);
-
-  const inputRef = useRef();
 
   const loadCart = useCallback(async () => {
     try {
@@ -97,7 +94,6 @@ export function CartProvider({ children }) {
         type: `${UPDATE_CART}_${REQUEST}`,
         payload: { loadingPayload: item },
       });
-      console.log(item);
       const res = await fetch(`http://localhost:3000/CartItems/${item.id}`, {
         method: 'PUT',
         body: JSON.stringify(item),
@@ -148,13 +144,12 @@ export function CartProvider({ children }) {
   const value = useMemo(
     () => ({
       ...cartState,
-      inputRef,
       loadCart,
       addCart,
       updateCart,
       deleteCart,
     }),
-    [cartState, inputRef, loadCart, addCart, updateCart, deleteCart],
+    [cartState, loadCart, addCart, updateCart, deleteCart],
   );
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
