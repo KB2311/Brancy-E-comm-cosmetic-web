@@ -56,6 +56,20 @@
       "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/1.webp",
       "price": 2000,
       "Quantity": 1
+    },
+    {
+      "id": "2",
+      "title": "Modern Eye Brush",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/2.webp",
+      "price": 6000,
+      "Quantity": 2
+    },
+    {
+      "id": "4",
+      "title": "Impulse Duffle",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/4.webp",
+      "price": 2500,
+      "Quantity": 1
     }
   ]
 }
