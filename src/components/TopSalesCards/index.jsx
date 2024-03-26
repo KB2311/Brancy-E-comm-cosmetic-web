@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { CiStar } from 'react-icons/ci';
 import { TiStarFullOutline } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 import ExpandIcon from '../../icons/Expand-Icon.svg';
 import HeartIcon from '../../icons/Heart-Icon.svg';
 import { useCart } from '../../context/CartContext';
@@ -38,9 +40,9 @@ function TopSalesCards({ name, imageUrl, price, item }) {
             }}
             className="flex w-full items-center gap-5 px-10 lg:px-7"
           >
-            <div className="buttonCarts">
+            <Link to={`/shop/${item.id}`} className="buttonCarts">
               <ExpandIcon />
-            </div>
+            </Link>
             <button
               type="submit"
               className="flex h-10 w-full cursor-pointer items-center justify-center rounded-full bg-white px-2 py-1 text-sm ring-2 ring-red-400 xsm:px-0 xsm:py-0 xsm:text-[100%]"
