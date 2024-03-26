@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
 import React, { useState } from 'react';
 import { CiStar } from 'react-icons/ci';
 import { TiStarFullOutline } from 'react-icons/ti';

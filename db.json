@@ -58,17 +58,17 @@
       "Quantity": 1
     },
     {
-      "id": "3",
-      "title": "Voyage face cleaner",
-      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/3.webp",
-      "price": 1000,
-      "Quantity": 1
+      "id": "2",
+      "title": "Modern Eye Brush",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/2.webp",
+      "price": 6000,
+      "Quantity": 2
     },
     {
-      "id": "8",
-      "title": "Offbite instant Age rewinder Eraser",
-      "imageUrl": "https://ik.imagekit.io/b8au2iwe2/dropper_img.webp?updatedAt=1711035603470",
-      "price": 21500,
+      "id": "4",
+      "title": "Impulse Duffle",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/4.webp",
+      "price": 2500,
       "Quantity": 1
     }
   ]
