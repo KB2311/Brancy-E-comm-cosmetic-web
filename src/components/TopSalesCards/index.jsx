@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CiStar } from 'react-icons/ci';
 import { TiStarFullOutline } from 'react-icons/ti';
 import ExpandIcon from '../../icons/Expand-Icon.svg';
@@ -6,25 +6,24 @@ import HeartIcon from '../../icons/Heart-Icon.svg';
 import { useCart } from '../../context/CartContext';
 
 function TopSalesCards({ name, imageUrl, price, item }) {
-  // const [addtocart, setAddtocart] = useState('Add To Cart');
+  const [addtocart, setAddtocart] = useState('Add To Cart');
+
+  const handleSubmit = () => {
+    setAddtocart('Item Added');
+    setTimeout(() => {
+      setAddtocart('Add To Cart');
+    }, 2000);
+  };
   const { cart, addCart, updateCart } = useCart();
   const onAddtoCart = item => {
     const data = cart.find(x => x.id === item.id);
+    handleSubmit();
     if (data) {
       return updateCart({ ...data, Quantity: data.Quantity + 1 });
     }
     return addCart({ ...item, Quantity: 1 });
   };
   console.log(cart);
-
-  // const onSubmiting = e => {
-  //   e.preventDefault();
-
-  //   setAddtocart('Item Added');
-  //   setTimeout(() => {
-  //     setAddtocart('Add To Cart');
-  //   }, 2000);
-  // };
 
   return (
     <div className="topCard relative w-full">
@@ -45,7 +44,7 @@ function TopSalesCards({ name, imageUrl, price, item }) {
               type="submit"
               className="flex h-10 w-full cursor-pointer items-center justify-center rounded-full bg-white px-2 py-1 text-sm ring-2 ring-red-400 xsm:px-0 xsm:py-0 xsm:text-[100%]"
             >
-              Add To Cart
+              {addtocart}
             </button>
             <div className="buttonCarts">
               <HeartIcon />

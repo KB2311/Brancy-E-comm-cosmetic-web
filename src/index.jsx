@@ -13,6 +13,7 @@ import Cart from './Pages/Cart/Cart';
 import Notfound from './Pages/Notfound/Notfound';
 import { ProductContextProvider } from './context/ProductContext';
 import { CartProvider } from './context/CartContext';
+import Checkout from './Pages/Checkout/Checkout';
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <Cart />,
+      },
+      {
+        path: '/checkout',
+        element: <Checkout />,
       },
       {
         path: '/notfound',

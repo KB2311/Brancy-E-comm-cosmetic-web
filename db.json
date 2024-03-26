@@ -51,10 +51,10 @@
   ],
   "CartItems": [
     {
-      "id": "5",
-      "title": "Sprite Yoga Straps",
-      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/5.webp",
-      "price": 4500,
+      "id": "1",
+      "title": "Readable content DX22",
+      "imageUrl": "https://template.hasthemes.com/brancy/brancy/assets/images/shop/1.webp",
+      "price": 2000,
       "Quantity": 1
     }
   ]
